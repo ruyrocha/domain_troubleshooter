@@ -1,6 +1,7 @@
 require "domain_troubleshooter/version"
 require "public_suffix"
 require "whois"
+require "whois-parser"
 
 module Domain
   class Troubleshooter
