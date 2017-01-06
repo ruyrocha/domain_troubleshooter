@@ -22,7 +22,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+irb(main):001:0> dt = Domain::Troubleshooter.new('github.com')
+=> #<Domain::Troubleshooter:0x007fa53b8c0090 @name="github.com">
+irb(main):002:0> dt.valid?      # checks if domain name is valid, really.
+=> true
+irb(main):003:0> dt.resolvable? # checks if domain resolves to an IP address
+=> true
+irb(main):004:0> dt.expired?    # checks if it did not expired
+=> false
+irb(main):005:0>
+```
 
 ## Development
 
@@ -32,7 +42,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/domain_troubleshooter. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/ruyrocha/domain_troubleshooter. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
